@@ -1,0 +1,18 @@
+{
+  "experiment_id": "SHR-PAPER-01-A",
+  "seed": 233,
+  "L": 3,
+  "G": [1, 2, 3, 4, 5],
+  "channels": 64,
+  "nodes": 256,
+  "neighbors": 20,
+  "warmup": 10,
+  "repeats": 40,
+  "bandwidth": null,
+  "outer_path_cap": null,
+  "aggregation_backend": "sparse",
+  "precision": "float32",
+  "tf32": false,
+  "geometry_precomputed": true,
+  "training_gradients": ["features", "alpha", "geometry", "path_weights"]
+}

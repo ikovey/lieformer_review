@@ -1,0 +1,41 @@
+[project]
+name = "lieformer"
+version = "1.0.0"
+requires-python = ">= 3.10"
+dependencies = [
+    "e3nn",
+    "h5py",
+    "lmdb",
+    "numpy",
+    "opt-einsum-fx",
+    "pandas",
+    "pyyaml",
+    "rdkit",
+    "rich",
+    "sympy",
+    "torch",
+    "torch-cluster",
+    "torch_geometric",
+    "torch-scatter",
+    "qqtools>=1.3.22",
+]
+
+[project.optional-dependencies]
+pbc-ase = [
+    "ase",
+]
+pbc-alchemi = [
+    "nvalchemi-toolkit-ops[torch]",
+]
+
+
+[tool.black]
+line-length = 120
+
+
+[tool.isort]
+profile = "black"
+
+[tool.flake8]
+max-line-length = 120
+ignore = "F401,E402,E501,E203,W503,E722"

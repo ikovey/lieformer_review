@@ -1,0 +1,17 @@
+schema_version: 1
+profiles:
+  random_1k:
+    id: oc22_train1k_random_s42_v1
+  random_100k:
+    id: oc22_train100k_random_s42_v1
+  random_1m:
+    id: oc22_train1m_random_s42_v1
+  # Legacy aliases: keep existing experiment configurations reproducible.
+  debug:
+    id: oc22_train1k_random_s42_v1
+  screen:
+    id: oc22_train100k_random_s42_v1
+  confirm:
+    id: oc22_train1m_random_s42_v1
+  full:
+    id: oc22_full_official_v1
